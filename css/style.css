@@ -23,7 +23,8 @@
 /* Variables */
 
 :root {
-    --accent_color: #8edbff;
+    --accent_color: #ff8c82;
+    /* #8edbff; */
     /* #00aeff; */
 }
 
@@ -69,6 +70,79 @@ body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.nav-spacer {
+    margin-top: 120px;
+}
+
+.video-text-container {
+    font-size: 2rem;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* height: inherit; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+}
+
+.video-text,
+.video-text-container h3 {
+    color: white;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-text-container h4 {
+    color: white;
+}
+
+.video-text-container h3 {
+    font-size: 3.5rem;
+}
+
+.icon-play {
+    font-size: 4rem;
+}
+
+.video-player {
+    background-image: url("/img/KevinandKatyThumbnailVimeo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .offcanvas #page {
@@ -143,12 +217,67 @@ figure {
 
 .fh5co-nav {
     position: absolute;
+    --logo_width: 200px;
     top: 0;
     margin: 0;
     padding: 0;
     width: 100%;
     padding: 20px 0;
-    /* z-index: 1001; */
+    visibility: visible;
+    /* -webkit-animation-name: NavFadeIn; */
+    /* animation-name: NavFadeIn; */
+    /* transition-property: opacity; */
+    /* animation-duration: 0.5s; */
+}
+
+@keyframes NavFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideNavDown {
+    from {
+        transform: translate(0, -100%);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slideNavUp {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(0, -100%);
+        visibility: hidden;
+    }
+}
+
+.navbar-fixed-scroll {
+    position: fixed;
+    padding: 10px 0;
+    --logo_width: 150px;
+    background-color: rgb(143, 143, 143);
+    z-index: 1000;
+    -webkit-animation-name: slideNavDown;
+    animation-name: slideNavDown;
+    transition-property: transform;
+    animation-duration: 0.5s;
+}
+
+.navbar-slide-up {
+    -webkit-animation-name: slideNavUp;
+    animation-name: slideNavUp;
+    transition-property: transform;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .row.nav {
@@ -162,6 +291,9 @@ figure {
     .fh5co-nav {
         padding: 20px 0;
     }
+    .navbar-fixed-scroll {
+        position: absolute;
+    }
 }
 .fh5co-nav #fh5co-logo {
     font-size: 40px;
@@ -172,7 +304,7 @@ figure {
 }
 
 #logo {
-    width: 200px;
+    width: var(--logo_width);
 }
 
 #logo-black {
@@ -214,7 +346,7 @@ figure {
     font-size: 14px;
     padding: 30px 10px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -224,6 +356,25 @@ figure {
 .fh5co-nav ul li a:active {
     color: white;
 }
+
+.fh5co-nav.nav-dark ul li a {
+    color: rgba(0, 0, 0, 0.5);
+}
+.fh5co-nav.nav-light ul li a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fh5co-nav.nav-light ul li a:hover,
+.fh5co-nav.nav-light ul li a:focus,
+.fh5co-nav.nav-light ul li a:active {
+    color: white;
+}
+.fh5co-nav.nav-dark ul li a:hover,
+.fh5co-nav.nav-dark ul li a:focus,
+.fh5co-nav.nav-dark ul li a:active {
+    color: black;
+}
+
 .fh5co-nav ul li.has-dropdown {
     position: relative;
 }
@@ -307,8 +458,11 @@ figure {
     -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
-.fh5co-nav ul li.active > a {
+.fh5co-nav.nav-light ul li.active > a {
     color: #fff !important;
+}
+.fh5co-nav.nav-dark ul li.active > a {
+    color: #000 !important;
 }
 
 #fh5co-counter,
@@ -392,6 +546,8 @@ figure {
     background-position: center center !important;
     position: relative;
     width: 100%;
+
+    background-image: url("/img/Couple_ErinMike_Banner_001.jpg");
 }
 .fh5co-cover .overlay {
     z-index: 0;
@@ -1107,8 +1263,11 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
-    padding: 7em 0;
+    padding: 5em 0;
     clear: both;
+}
+#fh5co-footer {
+    margin-bottom: 15px;
 }
 @media screen and (max-width: 768px) {
     #fh5co-testimonial,
@@ -1629,8 +1788,8 @@ form label {
 
 .gototop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 43px;
+    right: 5px;
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -1643,8 +1802,8 @@ form label {
     visibility: visible;
 }
 .gototop a {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: table;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -1655,7 +1814,7 @@ form label {
     border-radius: 4px;
 }
 .gototop a i {
-    height: 50px;
+    height: 30px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -1666,10 +1825,37 @@ form label {
     outline: none;
 }
 
+.sticky-footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 500;
+    background-color: var(--accent_color);
+    color: white;
+    text-align: center;
+}
+.sticky-footer-text,
+.sticky-footer-text a {
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sticky-footer-text a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+.sticky-footer-text a:hover {
+    color: #526e82;
+    transition-duration: 0.1s;
+}
+
 .fh5co-nav-toggle {
     position: relative;
     right: 25px;
-    top: -5px;
+    /* top: -5px; */
     /* width: 25px; */
     /* height: 25px; */
     cursor: pointer;
@@ -1734,6 +1920,7 @@ form label {
 .fh5co-nav-toggle.active i::before,
 .fh5co-nav-toggle.active i::after {
     background: black;
+    /* top: 5px; */
 }
 
 .fh5co-nav-toggle i::before {

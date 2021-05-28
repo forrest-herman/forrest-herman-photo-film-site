@@ -63,6 +63,10 @@
 
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
         <!-- FOR IE9 below -->
         <!--[if lt IE 9]>
             <script src="js/respond.min.js"></script>
@@ -72,7 +76,7 @@
         <div class="fh5co-loader"></div>
 
         <div id="page">
-            <nav class="fh5co-nav" role="navigation">
+            <nav id="navbar" class="fh5co-nav nav-light" role="navigation">
                 <div class="container">
                     <div id="nav" class="row nav">
                         <div class="col-xs-2 col-nav">
@@ -83,22 +87,22 @@
                             </div>
                         </div>
                         <div class="col-xs-10 text-right menu-1">
-                            <ul class="nav-menu">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="#">Hello</a></li>
-                                <li class="has-dropdown">
-                                    <a href="#">Photo</a>
+                            <ul id="nav-menu" class="nav-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">Hello</a></li>
+                                <li>
+                                    <a href="photos.html">Photos</a>
                                     <!-- <ul class="dropdown">
-                                        <li><a href="#">Web Design</a></li>
-                                        <li><a href="#">eCommerce</a></li>
-                                        <li><a href="#">Branding</a></li>
-                                        <li><a href="#">API</a></li>
-                                    </ul> -->
+										<li><a href="#">Web Design</a></li>
+										<li><a href="#">eCommerce</a></li>
+										<li><a href="#">Branding</a></li>
+										<li><a href="#">API</a></li>
+									</ul> -->
                                 </li>
-                                <li class="has-dropdown">
-                                    <a href="#">Films</a>
+                                <li>
+                                    <a href="films.html">Films</a>
                                 </li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -109,9 +113,10 @@
                 id="fh5co-header"
                 class="fh5co-cover"
                 role="banner"
-                style="background-image: url(img/b&w-silhouette.jpg)"
+                style="background-image: url(img/Couple_Engage_ErinMike_001.jpg)"
                 data-stellar-background-ratio="0.5"
             >
+                <!-- style="background-image: url(img/Couple_Engage_ErinMike_b&w_002.jpg)" -->
                 <div class="overlay-light"></div>
                 <!-- <div class="container">
                     <div class="row">
@@ -171,8 +176,8 @@
                 </div>
             </div>
 
-            <div id="fh5co-event" class="fh5co-bg" style="background-image: url(images/img_bg_3.jpg)">
-                <div class="overlay"></div>
+            <div id="fh5co-event" class="fh5co-bg" style="background-image: url(img/Couple_ErinMike_Banner_001.jpg)">
+                <!-- <div class="overlay"></div> -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -299,139 +304,6 @@
                                             <p>Send me your schedule...</p>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="fh5co-gallery" class="fh5co-section-gray">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                            <span>View Past Work</span>
-                            <h2>Wedding Gallery</h2>
-                            <p>
-                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row row-bottom-padded-md">
-                        <div class="col-md-12">
-                            <ul id="fh5co-gallery-list">
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-1.jpg)"
-                                >
-                                    <a href="images/gallery-1.jpg">
-                                        <div class="case-studies-summary">
-                                            <span>14 Photos</span>
-                                            <h2>Two Glas of Juice</h2>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-2.jpg)"
-                                >
-                                    <a href="#" class="color-2">
-                                        <div class="case-studies-summary">
-                                            <span>30 Photos</span>
-                                            <h2>Timer starts now!</h2>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-3.jpg)"
-                                >
-                                    <a href="#" class="color-3">
-                                        <div class="case-studies-summary">
-                                            <span>90 Photos</span>
-                                            <h2>Beautiful sunset</h2>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-4.jpg)"
-                                >
-                                    <a href="#" class="color-4">
-                                        <div class="case-studies-summary">
-                                            <span>12 Photos</span>
-                                            <h2>Company's Conference Room</h2>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-5.jpg)"
-                                >
-                                    <a href="#" class="color-3">
-                                        <div class="case-studies-summary">
-                                            <span>50 Photos</span>
-                                            <h2>Useful baskets</h2>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-6.jpg)"
-                                >
-                                    <a href="#" class="color-4">
-                                        <div class="case-studies-summary">
-                                            <span>45 Photos</span>
-                                            <h2>Skater man in the road</h2>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-7.jpg)"
-                                >
-                                    <a href="#" class="color-4">
-                                        <div class="case-studies-summary">
-                                            <span>35 Photos</span>
-                                            <h2>Two Glas of Juice</h2>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-8.jpg)"
-                                >
-                                    <a href="#" class="color-5">
-                                        <div class="case-studies-summary">
-                                            <span>90 Photos</span>
-                                            <h2>Timer starts now!</h2>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li
-                                    class="one-third animate-box"
-                                    data-animate-effect="fadeIn"
-                                    style="background-image: url(images/gallery-9.jpg)"
-                                >
-                                    <a href="#" class="color-6">
-                                        <div class="case-studies-summary">
-                                            <span>56 Photos</span>
-                                            <h2>Beautiful sunset</h2>
-                                        </div>
-                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -670,6 +542,7 @@
                 </div>
             </div>
 
+            <!-- Page Footer -->
             <footer id="fh5co-footer" role="contentinfo">
                 <div class="container">
                     <div class="row copyright">
@@ -679,9 +552,8 @@
                                 <script>
                                     document.write(new Date().getFullYear())
                                 </script>
-                                <br />
-                                Designed by
-                                <a href="https://github.com/forrest-herman" target="_blank">Forrest Herman</a>
+                                Forrest Herman
+                                <!-- <a href="https://github.com/forrest-herman" target="_blank">Forrest Herman</a> -->
                                 <br />
                                 <a
                                     href="mailto:forrestherman.photography@gmail.com?subject='Forrest Herman — Wedding Photographer + Filmmaker Inquiry'"
@@ -714,11 +586,22 @@
                     </div>
                 </div>
             </footer>
+            <!--end of Page Footer -->
         </div>
 
         <div class="gototop js-top">
             <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
         </div>
+
+        <!--Footer notif bar-->
+        <div id="footer-notif-placeholder"></div>
+
+        <script>
+            $(function () {
+                $("#footer-notif-placeholder").load("footerStickyNotif.html")
+            })
+        </script>
+        <!--end of Footer notif bar-->
 
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
@@ -743,6 +626,9 @@
         <script src="js/simplyCountdown.js"></script>
         <!-- Main -->
         <script src="js/main.js"></script>
+
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/bfdc9bea0d.js"></script>
 
         <script>
             var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000)
