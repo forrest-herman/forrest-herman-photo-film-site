@@ -20,6 +20,9 @@
         $("#fh5co-offcanvas").append(clone1)
         var clone2 = $(".menu-2 > ul").clone()
         $("#fh5co-offcanvas").append(clone2)
+        $("#fh5co-offcanvas").prepend(
+            '<div class="container"><div id="fh5co-logo-black" class="row"><a href="index.html"><img id="logo-black" src="img/forrest-herman-black.png" alt="logo-black" /></a></div></div>'
+        )
 
         $("#fh5co-offcanvas .has-dropdown").addClass("offcanvas-has-dropdown")
         $("#fh5co-offcanvas").find("li").removeClass("has-dropdown")
@@ -50,8 +53,10 @@
 
             if ($("body").hasClass("overflow offcanvas")) {
                 $("body").removeClass("overflow offcanvas")
+                $("#fh5co-logo").removeClass("hidden")
             } else {
                 $("body").addClass("overflow offcanvas")
+                $("#fh5co-logo").addClass("hidden")
             }
             $this.toggleClass("active")
             event.preventDefault()
@@ -141,8 +146,10 @@
             var $win = $(window)
             if ($win.scrollTop() > 200) {
                 $(".js-top").addClass("active")
+                $(".sticky-footer").removeClass("hidden")
             } else {
                 $(".js-top").removeClass("active")
+                $(".sticky-footer").addClass("hidden")
             }
         })
     }
@@ -193,3 +200,53 @@
         counterWayPoint()
     })
 })()
+
+$(function () {
+    // this will get the full URL at the address bar
+    var url = window.location.href
+
+    // passes on every "a" tag
+    $("#nav-menu a").each(function () {
+        // checks if its the same on the address bar
+        if (url == this.href) {
+            $(this).closest("li").addClass("active")
+        }
+    })
+})
+
+// Nav bar stickyness
+
+$(document).ready(function () {
+    //change the integers below to match the height of your upper div, which I called
+    //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
+    //to figure out what the scroll position is when exactly you want to fix the nav
+    //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
+    //you know the position.
+    $(window).scroll(function () {
+        console.log($(window).scrollTop())
+
+        if ($(window).scrollTop() > 850) {
+            $("#navbar").addClass("navbar-fixed-scroll")
+            $("#navbar").removeClass("navbar-slide-up")
+            $(".sticky-footer").removeClass("hidden")
+        }
+
+        if ($(window).scrollTop() < 851 && $(window).scrollTop() > 700) {
+            // $("#navbar").removeClass("navbar-fixed-scroll")
+            $("#navbar").addClass("navbar-slide-up")
+        }
+
+        if ($(window).scrollTop() < 700) {
+            $("#navbar").removeClass("navbar-fixed-scroll")
+            $("#navbar").removeClass("navbar-slide-up")
+        }
+
+        // if ($(window).scrollTop() > 300) {
+        //     $(".sticky-footer").removeClass("hidden")
+        // }
+
+        // if ($(window).scrollTop() < 300) {
+        //     $(".sticky-footer").addClass("hidden")
+        // }
+    })
+})
