@@ -20,6 +20,9 @@
         $("#fh5co-offcanvas").append(clone1)
         var clone2 = $(".menu-2 > ul").clone()
         $("#fh5co-offcanvas").append(clone2)
+        $("#fh5co-offcanvas").prepend(
+            '<div class="container"><div id="fh5co-logo-black" class="row"><a href="index.html"><img id="logo-black" src="img/forrest-herman-black.png" alt="logo-black" /></a></div></div>'
+        )
 
         $("#fh5co-offcanvas .has-dropdown").addClass("offcanvas-has-dropdown")
         $("#fh5co-offcanvas").find("li").removeClass("has-dropdown")

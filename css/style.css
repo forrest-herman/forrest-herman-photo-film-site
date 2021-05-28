@@ -43,6 +43,13 @@ body {
     word-spacing: 0em;
     line-height: 2.5em;
     text-transform: uppercase;
+    position: relative;
+    z-index: 1000;
+}
+
+#fh5co-offcanvas .nav-menu {
+    font-size: 2.5rem;
+    padding: 10px 0px 0 10px;
 }
 
 #page {
@@ -130,6 +137,10 @@ figure {
     background: var(--accent_color);
 }
 
+#fh5co-offcanvas .container {
+    padding: 20px 0;
+}
+
 .fh5co-nav {
     position: absolute;
     top: 0;
@@ -137,7 +148,7 @@ figure {
     padding: 0;
     width: 100%;
     padding: 20px 0;
-    z-index: 1001;
+    /* z-index: 1001; */
 }
 
 .row.nav {
@@ -162,6 +173,25 @@ figure {
 
 #logo {
     width: 200px;
+}
+
+#logo-black {
+    width: 28vw;
+}
+
+#fh5co-logo {
+    position: relative;
+    z-index: 500;
+}
+
+#fh5co-logo-black {
+    position: relative;
+    z-index: 2000;
+}
+
+#fh5co-logo-black.row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -1512,19 +1542,21 @@ form label {
 #fh5co-offcanvas {
     position: absolute;
     z-index: 1000;
-    width: 270px;
+    --width: 100vw;
+    width: var(--width);
     background: rgb(255, 255, 255);
     top: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    padding: 45px 40px 40px 40px;
+    padding: 0px 0px 40px 40px;
     overflow-y: auto;
-    -moz-transform: translateX(270px);
-    -webkit-transform: translateX(270px);
-    -ms-transform: translateX(270px);
-    -o-transform: translateX(270px);
-    transform: translateX(270px);
+
+    -moz-transform: translateX(var(--width));
+    -webkit-transform: translateX(var(--width));
+    -ms-transform: translateX(var(--width));
+    -o-transform: translateX(var(--width));
+    transform: translateX(var(--width));
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -1669,8 +1701,9 @@ form label {
 }
 .fh5co-nav-toggle i {
     position: relative;
+    left: 15px;
     display: inline-block;
-    width: 25px;
+    width: 20px;
     height: 1px;
     color: #252525;
     font: bold 14px/0.4 Helvetica;
@@ -1686,7 +1719,7 @@ form label {
     height: 1px;
     background: #252525;
     position: absolute;
-    left: 0;
+    left: -5px;
     transition: all 0.2s ease-out;
 }
 .fh5co-nav-toggle.fh5co-nav-white > i {
@@ -1695,23 +1728,28 @@ form label {
 }
 .fh5co-nav-toggle.fh5co-nav-white > i::before,
 .fh5co-nav-toggle.fh5co-nav-white > i::after {
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+.fh5co-nav-toggle.active i::before,
+.fh5co-nav-toggle.active i::after {
+    background: black;
 }
 
 .fh5co-nav-toggle i::before {
-    top: -10px;
+    top: -7px;
 }
 
 .fh5co-nav-toggle i::after {
-    bottom: -10px;
+    bottom: -7px;
 }
 
 .fh5co-nav-toggle:hover i::before {
-    top: -8px;
+    top: -9px;
 }
 
 .fh5co-nav-toggle:hover i::after {
-    bottom: -8px;
+    bottom: -9px;
 }
 
 .fh5co-nav-toggle.active i {
