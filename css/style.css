@@ -23,7 +23,8 @@
 /* Variables */
 
 :root {
-    --accent_color: #ff8c82;
+    --accent_color: #f9975d;
+    /* #ff8c82; */
     /* #8edbff; */
     /* #00aeff; */
 }
@@ -35,6 +36,10 @@ body {
     line-height: 1.7;
     color: #828282;
     background: #fff;
+}
+
+.display-block a {
+    display: block;
 }
 
 .nav-menu {
@@ -49,7 +54,8 @@ body {
 }
 
 #fh5co-offcanvas .nav-menu {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.25em;
     padding: 10px 0px 0 10px;
 }
 
@@ -63,17 +69,23 @@ body {
     transition: 0.5s;
 }
 
-.overlay-light {
+.overlay-prep {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.overlay-light {
     background: rgba(0, 0, 0, 0.2);
 }
 
 .hidden {
     visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .nav-spacer {
@@ -81,27 +93,26 @@ body {
 }
 
 .video-text-container {
+    z-index: 500;
     font-size: 2rem;
     position: absolute;
     margin: auto;
-    top: 0;
+    top: 35%;
     left: 0;
     bottom: 0;
     right: 0;
     width: 100%;
-    /* height: inherit; */
     text-align: center;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: center;
-    /* margin: 0 auto; */
+    align-items: center; */
 }
 
 .video-text,
 .video-text-container h3 {
-    color: white;
+    color: black;
     font-family: Montserrat;
     text-transform: uppercase;
     display: flex;
@@ -117,10 +128,12 @@ body {
 
 .video-text-container h3 {
     font-size: 3.5rem;
+    color: white;
 }
 
 .icon-play {
     font-size: 4rem;
+    /* text-align: center; */
 }
 
 .video-player {
@@ -180,6 +193,10 @@ a:focus {
 
 p {
     margin-bottom: 20px;
+    color: #000;
+    font-family: "Cardo", serif;
+    /* font-family: "Fanwood Text", serif; */
+    font-size: 1.9rem;
 }
 
 h1,
@@ -190,7 +207,8 @@ h5,
 h6,
 figure {
     color: #000;
-    font-family: "Fanwood Text", serif;
+    font-family: "Cardo", serif;
+    /* font-family: "Fanwood Text", serif; */
     /* font-family: "Work Sans", Arial, sans-serif; */
     font-weight: 400;
     margin: 0 0 20px 0;
@@ -261,10 +279,16 @@ figure {
 }
 
 .navbar-fixed-scroll {
+    visibility: visible;
     position: fixed;
     padding: 10px 0;
     --logo_width: 150px;
-    background-color: rgb(143, 143, 143);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px -7px 17px 0px black;
+    /* background-image: url("/img/Couple_Engage_ErinMike_b&w_002.jpg"); */
+    background-size: cover;
+    background-position-y: 350px;
+    /* opacity: 0.7; */
     z-index: 1000;
     -webkit-animation-name: slideNavDown;
     animation-name: slideNavDown;
@@ -492,12 +516,14 @@ figure {
 .fh5co-video a {
     z-index: 1001;
     position: absolute;
-    top: 50%;
+    --circle_size: 65px;
+    /* top: 50%; */
+    top: 65%;
     left: 50%;
-    margin-top: -45px;
-    margin-left: -45px;
-    width: 90px;
-    height: 90px;
+    margin-top: calc(var(--circle_size) / -2);
+    margin-left: calc(var(--circle_size) / -2);
+    width: var(--circle_size);
+    height: var(--circle_size);
     display: table;
     text-align: center;
     background: #fff;
@@ -1106,9 +1132,9 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
     margin-bottom: 0px;
-    font-size: 100px;
+    font-size: 60px;
     line-height: 1.5;
-    font-family: "Sacramento", Arial, serif;
+    /* font-family: "Sacramento", Arial, serif; */
 }
 @media screen and (max-width: 768px) {
     #fh5co-header .display-tc h1,
@@ -1450,12 +1476,13 @@ form label {
     margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 10px;
     line-height: 1.5;
-    font-weight: bold;
-    color: var(--accent_color);
-    font-family: "Sacramento", Arial, serif;
+    /* font-weight: bold; */
+    /* color: var(--accent_color); */
+    font-family: "Cardo", serif;
+    /* "Sacramento", Arial, serif; */
 }
 @media screen and (max-width: 768px) {
     .fh5co-heading h2 {
@@ -1498,12 +1525,20 @@ form label {
     display: inline-block;
     zoom: 1;
     *display: inline;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
+.testimonial-img {
+    width: 100%;
+    height: 100%;
+    object-position: bottom;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 #fh5co-testimonial .wrap-testimony .testimony-slide figure img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -1833,7 +1868,11 @@ form label {
     background-color: var(--accent_color);
     color: white;
     text-align: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
+
 .sticky-footer-text,
 .sticky-footer-text a {
     color: white;
@@ -1843,10 +1882,10 @@ form label {
     font-weight: 500;
 }
 
-.sticky-footer-text a {
+/* .sticky-footer-text a {
     text-decoration: underline;
     text-decoration-thickness: 1px;
-}
+} */
 .sticky-footer-text a:hover {
     color: #526e82;
     transition-duration: 0.1s;
@@ -2189,4 +2228,58 @@ form label {
     opacity: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+.portfolio-img-container {
+    /* background: #fff; */
+    display: block;
+    outline: none;
+    position: relative;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.portfolio-img-container img,
+.img-container img {
+    width: 100%;
+}
+
+.col-sm-4 {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+@media (min-width: 500px) {
+    .gallery .col-sm-4 {
+        width: 33.33333%;
+        float: left;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    .order-sm-1 {
+        order: 1;
+    }
+    .order-sm-2 {
+        order: 2;
+    }
+
+    .img-container .about-img {
+        width: 85%;
+    }
+}
