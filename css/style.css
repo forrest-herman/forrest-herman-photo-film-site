@@ -1541,10 +1541,17 @@ form label {
     }
 }
 .fh5co-heading p {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 20px;
     line-height: 1.5;
     color: #828282;
+    font-family: Fanwood Text, serif;
+    font-style: italic;
 }
+.fh5co-heading.black p {
+    color: black;
+}
+
 .fh5co-heading span {
     text-transform: uppercase;
     font-size: 13px;
