@@ -1486,6 +1486,13 @@ form label {
 .fh5co-heading {
     margin-bottom: 5em;
 }
+
+#fh5co-started .fh5co-heading.insta-callout,
+.fh5co-heading.insta-callout {
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+
 .fh5co-heading.fh5co-heading-sm {
     margin-bottom: 2em;
 }
@@ -1676,11 +1683,29 @@ form label {
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
 }
-#fh5co-started .fh5co-heading h2 {
+#fh5co-started .fh5co-heading h2,
+#fh5co-started .fh5co-heading h3 {
     color: #fff;
+    text-transform: uppercase;
+    font-size: min(35px, 5vw);
 }
+#fh5co-started .fh5co-heading h4,
+#fh5co-started .fh5co-heading h4 > a {
+    color: #fff;
+    font-family: "Fanwood Text";
+    font-style: italic;
+    margin: 0;
+    font-size: min(25px, 3.7vw);
+}
+#fh5co-started .fh5co-heading h4 > a:hover {
+    padding-bottom: 0px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.9);
+}
+
 #fh5co-started .fh5co-heading p {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
 }
 #fh5co-started .form-control {
     background: rgba(255, 255, 255, 0.2);
