@@ -8,13 +8,10 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Wedding &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+        <title>Photos - Forrest Herman - Wedding Photographer + Filmmaker</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-        <meta
-            name="keywords"
-            content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"
-        />
+        <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
         <meta name="author" content="FREEHTML5.CO" />
 
         <!-- 
@@ -42,11 +39,7 @@
         <meta name="twitter:url" content="" />
         <meta name="twitter:card" content="" />
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700"
-            rel="stylesheet"
-            type="text/css"
-        />
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
@@ -83,15 +76,41 @@
         <div class="fh5co-loader"></div>
 
         <div id="page">
-            <!--Navigation bar-->
-            <div id="nav-placeholder"></div>
+            <!-- ****************************************** Black Nav ****************************************** -->
 
-            <script>
-                $(function () {
-                    $("#nav-placeholder").load("nav.html")
-                })
-            </script>
-            <!--end of Navigation bar-->
+            <nav id="navbar" class="fh5co-nav" role="navigation">
+                <!-- <div class="overlay-prep" style="background: rgba(0, 0, 0, 0.4)"></div> -->
+                <div class="container">
+                    <div id="nav" class="row nav nav-black">
+                        <div class="col-xs-2 col-nav">
+                            <div id="fh5co-logo">
+                                <a href="index.html">
+                                    <img id="logo" src="img/forrest-herman-black.png" alt="logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul id="nav-menu" class="nav-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">Hello</a></li>
+                                <li>
+                                    <a href="photos.html">Photos</a>
+                                    <!-- <ul class="dropdown">
+										<li><a href="#">Web Design</a></li>
+										<li><a href="#">eCommerce</a></li>
+										<li><a href="#">Branding</a></li>
+										<li><a href="#">API</a></li>
+									</ul> -->
+                                </li>
+                                <li>
+                                    <a href="films.html">Films</a>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
             <!-- <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner">
 		<div class="overlay-light"></div>
@@ -110,7 +129,8 @@
 	</header> -->
 
             <div class="container nav-spacer"></div>
-            <div id="fh5co-gallery" class="fh5co-section-gray">
+            <div id="fh5co-gallery">
+                <!-- class="fh5co-section-gray" -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -125,34 +145,41 @@
 
                     <div class="container">
                         <div class="row gallery">
-                            <div class="col-sm-4">
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_013.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_010.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_030.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_038.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_035.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_006.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_008.jpg" alt="" /></div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_025.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_009.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_027.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_034.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_031.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_005.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_016.jpg" alt="" /></div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_011.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_028.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_014.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_036.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_026.jpg" alt="" /></div>
-                                <div class="portfolio-img-container"><img src="/img/Portfolio_004.jpg" alt="" /></div>
+                            <div class="wrapper-3-col animate-box">
+                                <!-- col 1 -->
+                                <div class="portfolio-img-container order-md-1"><img src="/img/Portfolio_013.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-4"><img src="/img/Portfolio_010.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-8"><img src="/img/Portfolio_030.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-11"><img src="/img/Portfolio_036.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-14"><img src="/img/Portfolio_035.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-17"><img src="/img/Portfolio_041.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-17"><img src="/img/Portfolio_048.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-17"><img src="/img/Portfolio_006.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-20"><img src="/img/Portfolio_008.jpg" alt="" /></div>
+                                <!-- col 2 -->
+                                <div class="portfolio-img-container order-md-2"><img src="/img/Portfolio_042.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-5"><img src="/img/Portfolio_009.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-9"><img src="/img/Portfolio_027.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-12"><img src="/img/Portfolio_034.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-15"><img src="/img/Portfolio_043.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-15"><img src="/img/Portfolio_037.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-15"><img src="/img/Portfolio_047.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-18"><img src="/img/Portfolio_005.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-21"><img src="/img/Portfolio_016.jpg" alt="" /></div>
+                                <!-- col 3 -->
+                                <div class="portfolio-img-container order-md-3"><img src="/img/Event_Mel_Wedding_001.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-6"><img src="/img/Portfolio_011.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-10"><img src="/img/Portfolio_014.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-13"><img src="/img/Portfolio_038.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-16"><img src="/img/Portfolio_028.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-19"><img src="/img/Portfolio_031.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-16"><img src="/img/Portfolio_051.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-19"><img src="/img/Portfolio_045.jpg" alt="" /></div>
+                                <div class="portfolio-img-container order-md-22"><img src="/img/Portfolio_004.jpg" alt="" /></div>
                             </div>
                         </div>
                     </div>
+
                     <!-- 
                     <div class="row row-bottom-padded-md">
                         <div class="col-md-12">
@@ -288,30 +315,20 @@
                                 Forrest Herman
                                 <!-- <a href="https://github.com/forrest-herman" target="_blank">Forrest Herman</a> -->
                                 <br />
-                                <a
-                                    href="mailto:forrestherman.photography@gmail.com?subject='Forrest Herman — Wedding Photographer + Filmmaker Inquiry'"
-                                >
-                                    forrestherman.photography@gmail.com
-                                </a>
+                                <a href="mailto:forrestherman.photography@gmail.com?subject='Forrest Herman — Wedding Photographer + Filmmaker Inquiry'"> forrestherman.photography@gmail.com </a>
                                 <br />
                                 (705) 203-2534
                             </p>
                             <div>
                                 <ul class="fh5co-social-icons">
                                     <li>
-                                        <a href="https://www.instagram.com/forrestherman/"
-                                            ><i class="icon-instagram"></i
-                                        ></a>
+                                        <a href="https://www.instagram.com/forrestherman/"><i class="icon-instagram"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/forrestherman.photography"
-                                            ><i class="icon-facebook"></i
-                                        ></a>
+                                        <a href="https://www.facebook.com/forrestherman.photography"><i class="icon-facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.pinterest.ca/forresthermanphotography/"
-                                            ><i class="icon-pinterest"></i
-                                        ></a>
+                                        <a href="https://www.pinterest.ca/forresthermanphotography/"><i class="icon-pinterest"></i></a>
                                     </li>
                                 </ul>
                             </div>
