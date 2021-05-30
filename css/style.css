@@ -1913,6 +1913,12 @@ form label {
     outline: none;
 }
 
+#sticky-footer-bar.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .sticky-footer {
     position: fixed;
     bottom: 0px;
@@ -1924,6 +1930,36 @@ form label {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+}
+#sticky-footer-bar .social-icons {
+    margin-bottom: 0;
+    margin-right: 10px;
+    padding-left: 0;
+}
+
+#sticky-footer-bar .social-icons li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+#sticky-footer-bar .social-icons li a {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#sticky-footer-bar .social-icons li a i {
+    font-size: 20px;
+    color: white;
 }
 
 .sticky-footer-text,
@@ -1940,14 +1976,13 @@ form label {
     .sticky-footer-text a {
         font-size: min(18px, 3vw);
     }
+    .display-none-sm {
+        display: none;
+    }
 }
 
-/* .sticky-footer-text a {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-} */
 .sticky-footer-text a:hover {
-    color: #526e82;
+    color: black;
     transition-duration: 0.1s;
 }
 
