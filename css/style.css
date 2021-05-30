@@ -561,13 +561,19 @@ figure {
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center !important;
+    background-position: center center;
     position: relative;
     width: 100%;
 }
 
 .fh5co-cover.cover-about {
-    background-position: center 92% !important;
+    background-position: center 71%;
+}
+
+@media screen and (max-width: 1500px) {
+    .fh5co-cover.cover-about {
+        background-position: center 92%;
+    }
 }
 
 .fh5co-cover .overlay {
@@ -1535,10 +1541,17 @@ form label {
     }
 }
 .fh5co-heading p {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 20px;
     line-height: 1.5;
     color: #828282;
+    font-family: Fanwood Text, serif;
+    font-style: italic;
 }
+.fh5co-heading.black p {
+    color: black;
+}
+
 .fh5co-heading span {
     text-transform: uppercase;
     font-size: 13px;
