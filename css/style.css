@@ -23,7 +23,7 @@
 /* Variables */
 
 :root {
-    --accent_color: #f9975d;
+    --accent_color: #ad977b;
     /* #ff8c82; */
     /* #8edbff; */
     /* #00aeff; */
@@ -35,7 +35,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #828282;
-    background: #fff;
+    background: #fdfbf7;
 }
 
 .display-block a {
@@ -43,7 +43,8 @@ body {
 }
 
 .nav-menu {
-    font-family: "Montserrat Medium", sans-serif;
+    font-family: "Cardo", sans-serif;
+    /* font-family: "Montserrat Medium", sans-serif; */
     font-size: 0.5rem;
     letter-spacing: 0.5em;
     word-spacing: 0em;
@@ -186,7 +187,7 @@ p {
     color: #000;
     font-family: "Cardo", serif;
     /* font-family: "Fanwood Text", serif; */
-    font-size: 1.9rem;
+    font-size: 16px;
 }
 
 h1,
@@ -563,6 +564,10 @@ figure {
     background-position: center center !important;
     position: relative;
     width: 100%;
+}
+
+.fh5co-cover.cover-about {
+    background-position: center 92% !important;
 }
 
 .fh5co-cover .overlay {
@@ -1288,6 +1293,12 @@ form label {
 #fh5co-footer {
     margin-bottom: 15px;
 }
+.footer-logo {
+    margin: 10px;
+}
+#footer-logo {
+    width: 180px;
+}
 
 @media screen and (max-width: 768px) {
     #fh5co-testimonial,
@@ -1902,7 +1913,7 @@ form label {
 @media screen and (max-width: 768px) {
     .sticky-footer-text,
     .sticky-footer-text a {
-        font-size: 3vw;
+        font-size: min(18px, 3vw);
     }
 }
 
@@ -2043,8 +2054,10 @@ form label {
 .btn {
     margin-right: 4px;
     margin-bottom: 4px;
-    font-family: "Work Sans", Arial, sans-serif;
-    font-size: 16px;
+    font-family: "Cardo", sans-serif;
+    text-transform: uppercase;
+    /* font-family: "Work Sans", Arial, sans-serif; */
+    font-size: 15px;
     font-weight: 400;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -2341,6 +2354,13 @@ form label {
     .img-container .about-img {
         padding: 15px 0 0 0;
     }
+
+    .mobile-text-center {
+        text-align: center;
+    }
+    .mobile-justify-center {
+        justify-content: center;
+    }
 }
 
 .row.no-margin {
@@ -2356,9 +2376,9 @@ form label {
 .btn-border-black a {
     font-family: Cardo, serif;
     font-size: 18px;
-    max-width: 300px;
-    border: 1px solid #828282;
-    border-radius: 10px;
+    min-width: 200px;
+    border: 1px solid var(--accent_color);
+    border-radius: 5px;
     padding: 12px 20px;
     -webkit-transition: 0.1s;
     -o-transition: 0.1s;
@@ -2366,7 +2386,7 @@ form label {
 }
 
 .btn-border-black a:hover {
-    background-color: black;
+    background-color: var(--accent_color);
     color: white;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
