@@ -15,7 +15,12 @@
 
     var offcanvasMenu = function () {
         $("#page").prepend('<div id="fh5co-offcanvas" />')
-        $("#nav").append('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>')
+        $("#nav.nav-white").append(
+            '<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>'
+        )
+        $("#nav.nav-black").append(
+            '<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-black"><i></i></a>'
+        )
         var clone1 = $(".menu-1 > ul").clone()
         $("#fh5co-offcanvas").append(clone1)
         var clone2 = $(".menu-2 > ul").clone()

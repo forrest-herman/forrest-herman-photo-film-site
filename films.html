@@ -8,13 +8,10 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Wedding &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+        <title>Films - Forrest Herman - Wedding Photographer + Filmmaker</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-        <meta
-            name="keywords"
-            content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"
-        />
+        <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
         <meta name="author" content="FREEHTML5.CO" />
 
         <!-- 
@@ -42,13 +39,11 @@
         <meta name="twitter:url" content="" />
         <meta name="twitter:card" content="" />
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700"
-            rel="stylesheet"
-            type="text/css"
-        />
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />
 
         <!-- Font Awesome -->
         <script src="https://use.fontawesome.com/bfdc9bea0d.js"></script>
@@ -85,15 +80,41 @@
         <div class="fh5co-loader"></div>
 
         <div id="page">
-            <!--Navigation bar-->
-            <div id="nav-placeholder"></div>
+            <!-- ****************************************** Black Nav ****************************************** -->
 
-            <script>
-                $(function () {
-                    $("#nav-placeholder").load("nav.html")
-                })
-            </script>
-            <!--end of Navigation bar-->
+            <nav id="navbar" class="fh5co-nav" role="navigation">
+                <!-- <div class="overlay-prep" style="background: rgba(0, 0, 0, 0.4)"></div> -->
+                <div class="container">
+                    <div id="nav" class="row nav nav-black">
+                        <div class="col-xs-2 col-nav">
+                            <div id="fh5co-logo">
+                                <a href="index.html">
+                                    <img id="logo" src="img/forrest-herman-black.png" alt="logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul id="nav-menu" class="nav-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">Hello</a></li>
+                                <li>
+                                    <a href="photos.html">Photos</a>
+                                    <!-- <ul class="dropdown">
+										<li><a href="#">Web Design</a></li>
+										<li><a href="#">eCommerce</a></li>
+										<li><a href="#">Branding</a></li>
+										<li><a href="#">API</a></li>
+									</ul> -->
+                                </li>
+                                <li>
+                                    <a href="films.html">Films</a>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
             <!-- <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner">
                 <div class="overlay-light"></div>
@@ -113,56 +134,37 @@
                     </div>
                 </div>
             </header> -->
-            <div class="container nav-spacer">
-                <!-- <h3>For details on wedding films, please see here.</h3> -->
-            </div>
+            <div class="container nav-spacer"></div>
 
             <div class="container">
-                <div class="col-md-12 animate-box">
-                    <div
-                        class="fh5co-video fh5co-bg"
-                        style="background-image: url('/img/KevinandKatyThumbnailVimeo.jpg')"
-                    >
-                        <div class="video-text-container">
-                            <h3>Katy + Kevin</h3>
-                            <h4>September 2020</h4>
+                <!-- <div id="fh5co-films" class="fh5co-section-gray"> -->
+                <div class="row fh5co-section">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                        <span>Wedding</span>
+                        <h2>Films</h2>
+                        <!-- <p>
+							Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+							there live the blind texts.
+						</p> -->
+                    </div>
+
+                    <div class="col-md-12 no-padding animate-box">
+                        <div class="fh5co-video fh5co-bg" style="background-image: url('/img/KevinandKatyThumbnailVimeo.jpg')">
+                            <div class="video-text-container">
+                                <h3>Katy + Kevin</h3>
+                                <h4>September 2020</h4>
+                                <div class="row flex-row align-items-center">
+                                    <a href="https://vimeo.com/462731341?wmode=opaque&byline=0&title=0" class="popup-vimeo"> <i class="icon-play video-text"></i></a>
+                                    <!-- <span style="text-align: center; vertical-align: middle">Play Film</span> -->
+                                </div>
+                            </div>
+
+                            <div class="overlay"></div>
                         </div>
-                        <a
-                            href="https://vimeo.com/video/462731341?wmode=opaque&portrait=0&byline=0&title=0"
-                            class="popup-vimeo"
-                        >
-                            <i class="icon-play video-text"></i
-                        ></a>
-                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>
-            <!-- <br />
-            <div class="video-responsive">
-                <iframe
-                    src="https://player.vimeo.com/video/462731341?wmode=opaque&portrait=0&byline=0&title=0"
-                    width="640"
-                    height="564"
-                    frameborder="0"
-                    allow="autoplay; fullscreen"
-                    allowfullscreen
-                    sidedock="0"
-                ></iframe>
-                <div class="video-text-container display-flex align-items-center video-player">
-                    <h3>Katy + Kevin</h3>
-                    <h4>September 2020</h4>
-                    <span class="video-text"
-                        ><i class="fas fa-play"></i>
-                        Play Film
-                    </span>
-                </div>
-            </div> -->
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-12"></div>
-                </div>
-            </div>
+            <!-- </div> -->
             <!-- 
             <div
                 class="block-container block-video-player-banner page-block block-container--flushed-top-on-first-rank"
@@ -240,6 +242,8 @@
                 </div>
             </div> -->
 
+            <!-- ****************************************** Footer ****************************************** -->
+
             <!-- Page Footer -->
             <footer id="fh5co-footer" role="contentinfo">
                 <div class="container">
@@ -253,30 +257,20 @@
                                 Forrest Herman
                                 <!-- <a href="https://github.com/forrest-herman" target="_blank">Forrest Herman</a> -->
                                 <br />
-                                <a
-                                    href="mailto:forrestherman.photography@gmail.com?subject='Forrest Herman — Wedding Photographer + Filmmaker Inquiry'"
-                                >
-                                    forrestherman.photography@gmail.com
-                                </a>
+                                <a href="mailto:forrestherman.photography@gmail.com?subject=Forrest Herman — Wedding Inquiry"> forrestherman.photography@gmail.com </a>
                                 <br />
                                 (705) 203-2534
                             </p>
                             <div>
                                 <ul class="fh5co-social-icons">
                                     <li>
-                                        <a href="https://www.instagram.com/forrestherman/"
-                                            ><i class="icon-instagram"></i
-                                        ></a>
+                                        <a href="https://www.instagram.com/forrestherman/" target="_blank"><i class="icon-instagram"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/forrestherman.photography"
-                                            ><i class="icon-facebook"></i
-                                        ></a>
+                                        <a href="https://www.facebook.com/forrestherman.photography" target="_blank"><i class="icon-facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.pinterest.ca/forresthermanphotography/"
-                                            ><i class="icon-pinterest"></i
-                                        ></a>
+                                        <a href="https://www.pinterest.ca/forresthermanphotography/" target="_blank"><i class="icon-pinterest"></i></a>
                                     </li>
                                 </ul>
                             </div>
