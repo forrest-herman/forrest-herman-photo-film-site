@@ -15,12 +15,8 @@
 
     var offcanvasMenu = function () {
         $("#page").prepend('<div id="fh5co-offcanvas" />')
-        $("#nav.nav-white").append(
-            '<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>'
-        )
-        $("#nav.nav-black").append(
-            '<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-black"><i></i></a>'
-        )
+        $("#nav.nav-white").append('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>')
+        $("#nav.nav-black").append('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-black"><i></i></a>')
         var clone1 = $(".menu-1 > ul").clone()
         $("#fh5co-offcanvas").append(clone1)
         var clone2 = $(".menu-2 > ul").clone()
@@ -247,3 +243,22 @@ $(function () {
 //         }
 //     })
 // })
+
+// Favicon
+
+// matcher = window.matchMedia("(prefers-color-scheme: dark)")
+// matcher.addListener(onUpdate)
+// onUpdate()
+
+// lightSchemeIcon = document.querySelector("link#light-scheme-icon")
+// darkSchemeIcon = document.querySelector("link#dark-scheme-icon")
+
+// function onUpdate() {
+//     if (matcher.matches) {
+//         lightSchemeIcon.remove()
+//         document.head.append(darkSchemeIcon)
+//     } else {
+//         document.head.append(lightSchemeIcon)
+//         darkSchemeIcon.remove()
+//     }
+// }
