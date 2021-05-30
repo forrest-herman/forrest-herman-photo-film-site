@@ -561,18 +561,18 @@ figure {
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center !important;
     position: relative;
     width: 100%;
 }
 
 .fh5co-cover.cover-about {
-    background-position: center 71%;
+    background-position: center 71% !important;
 }
 
 @media screen and (max-width: 1500px) {
     .fh5co-cover.cover-about {
-        background-position: center 92%;
+        background-position: center 92% !important;
     }
 }
 
