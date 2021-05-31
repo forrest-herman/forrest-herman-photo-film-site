@@ -132,106 +132,12 @@
             <div class="fh5co-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-md-push-6 animate-box">
-                            <div
-                                class="typeform-widget"
-                                data-url="https://form.typeform.com/to/AoN00cGe?typeform-medium=embed-snippet"
-                                data-transparency="50"
-                                data-hide-headers="true"
-                                data-hide-footer="true"
-                                style="width: 100%; height: 450px"
-                            ></div>
-                            <script>
-                                ;(function () {
-                                    var qs,
-                                        js,
-                                        q,
-                                        s,
-                                        d = document,
-                                        gi = d.getElementById,
-                                        ce = d.createElement,
-                                        gt = d.getElementsByTagName,
-                                        id = "typef_orm",
-                                        b = "https://embed.typeform.com/"
-                                    if (!gi.call(d, id)) {
-                                        js = ce.call(d, "script")
-                                        js.id = id
-                                        js.src = b + "embed.js"
-                                        q = gt.call(d, "script")[0]
-                                        q.parentNode.insertBefore(js, q)
-                                    }
-                                })()
-                            </script>
-
-                            <!-- <h3>Get In Touch</h3> -->
-                            <!-- Contact Form!!!!!!!!! -->
-                            <!-- <form action="#">
-                                <div class="row form-group">
-                                    <div class="col-md-6">
-                                        <label for="fname">First Name</label>
-                                        <input
-                                            type="text"
-                                            id="fname"
-                                            class="form-control"
-                                            placeholder="Your firstname"
-                                        />
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="lname">Last Name</label>
-                                        <input
-                                            type="text"
-                                            id="lname"
-                                            class="form-control"
-                                            placeholder="Your lastname"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label for="email">Email</label>
-                                        <input
-                                            type="text"
-                                            id="email"
-                                            class="form-control"
-                                            placeholder="Your email address"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label for="subject">Subject</label>
-                                        <input
-                                            type="text"
-                                            id="subject"
-                                            class="form-control"
-                                            placeholder="Your subject of this message"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label for="message">Message</label>
-                                        <textarea
-                                            name="message"
-                                            id="message"
-                                            cols="30"
-                                            rows="10"
-                                            class="form-control"
-                                            placeholder="Write us something"
-                                        ></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" value="Send Message" class="btn btn-primary" />
-                                </div>
-                            </form> -->
-                        </div>
-                        <div class="col-md-5 col-md-pull-5 animate-box">
+                        <div class="col-md-5 animate-box">
                             <div class="fh5co-contact-info">
-                                <h3>Contact Information</h3>
+                                <h2>Hello!</h2>
+                                <p>If you made it this far, it's likely you're considering me for your wedding. That's awesome, I look forward to meeting you and documenting your story.</p>
+
+                                <h4>Contact Information</h4>
                                 <ul>
                                     <li class="address">North Bay, Ontario</li>
                                     <li class="phone"><a href="tel://7052032534">(705) 203-2534</a></li>
@@ -242,9 +148,143 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="col-md-7 animate-box">
+                            <!-- Contact Form!!!!!!!!! -->
+                            <form action="https://formspree.io/f/xyylwddn" method="POST">
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <label for="fname">First Name *</label>
+                                        <input type="text" id="fname" class="form-control" placeholder="Your First Name" required="" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lname">Last Name *</label>
+                                        <input type="text" id="lname" class="form-control" placeholder="Your Last Name" required="" />
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <label for="fname">Your Partner's First Name</label>
+                                        <input type="text" id="fname2" class="form-control" placeholder="Your Partner's First Name" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lname">Your Partner's Last Name</label>
+                                        <input type="text" id="lname2" class="form-control" placeholder="Your Partner's Last Name" />
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" class="form-control" placeholder="Your email address" required="" />
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="telephone">Phone #</label>
+                                        <input type="telephone" name="telephone" id="telephone" class="form-control" placeholder="(444) 444-4444" />
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="subject">Let's follow each other!</label>
+                                        <input type="text" id="subject" class="form-control" placeholder="@your-instagram-handle" />
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="message">Session Type *</label>
+                                        <select name="found_me" id="found_me" class="form-control" required="">
+                                            <option value="Select" selected="" disabled="">Select</option>
+                                            <option value="Wedding or Elopement Photography">Wedding / Elopement - Photography</option>
+                                            <option value="Wedding or Elopement Film">Wedding / Elopement - Film</option>
+                                            <option value="Engagement / Proposal">Engagement / Proposal</option>
+                                            <option value="Family Session">Family Session</option>
+                                            <option value="Event or Celebration">Event</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <p style="margin-bottom: 0px"><a href="offerings.html">Explore packages</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="subject">3 words to describe the vibe</label>
+                                        <input type="text" id="vibe" class="form-control" placeholder="adventure, cozy, romantic, fairytale, rain, polaroid, etc." />
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="message">How did you hear about me? *</label>
+                                        <select name="found_me" id="found_me" class="form-control" required="">
+                                            <option value="Select" selected="" disabled="">Select</option>
+                                            <option value="Website">Website</option>
+                                            <option value="Facebook">Facebook</option>
+                                            <option value="Ad">Ad</option>
+                                            <option value="Refferal">Referral</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="message">Tell me more *</label>
+                                        <textarea
+                                            type="message"
+                                            id="message"
+                                            cols="30"
+                                            rows="10"
+                                            class="form-control"
+                                            placeholder="The more details the better. How can I serve you?"
+                                            required=""
+                                        ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="submit" value="Send Message" class="btn btn-form" />
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Typeform Embed  -->
+            <!-- <div
+                class="typeform-widget"
+                data-url="https://form.typeform.com/to/AoN00cGe?typeform-medium=embed-snippet"
+                data-transparency="50"
+                data-hide-headers="true"
+                data-hide-footer="true"
+                style="width: 100%; height: 850px"
+            ></div>
+            <script>
+                ;(function () {
+                    var qs,
+                        js,
+                        q,
+                        s,
+                        d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm",
+                        b = "https://embed.typeform.com/"
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, "script")
+                        js.id = id
+                        js.src = b + "embed.js"
+                        q = gt.call(d, "script")[0]
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+            </script> -->
 
             <!-- ****************************************** Insta callout ****************************************** -->
 
