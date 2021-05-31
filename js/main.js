@@ -148,9 +148,11 @@
             if ($win.scrollTop() > 200) {
                 $(".js-top").addClass("active")
                 $(".sticky-footer").removeClass("hidden")
+                $(".hidden-on-hero").removeClass("hidden")
             } else {
                 $(".js-top").removeClass("active")
                 $(".sticky-footer").addClass("hidden")
+                $(".hidden-on-hero").addClass("hidden")
             }
         })
     }
