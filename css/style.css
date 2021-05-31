@@ -82,6 +82,10 @@ body {
     margin-top: 120px;
 }
 
+.nav-hero-spacer {
+    margin-top: 3em;
+}
+
 .video-text-container {
     z-index: 500;
     font-size: 2rem;
@@ -395,14 +399,14 @@ figure {
 }
 .fh5co-nav ul li.has-dropdown .dropdown {
     width: 130px;
-    -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.75);
     z-index: 1002;
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: 40px;
+    top: 25px;
     left: 0;
     text-align: left;
     background: #fff;
@@ -438,7 +442,7 @@ figure {
 .fh5co-nav ul li.has-dropdown .dropdown li a {
     padding: 2px 0;
     display: block;
-    color: #999999;
+    color: #999999 !important;
     line-height: 1.2;
     text-transform: none;
     font-size: 15px;
@@ -1329,6 +1333,11 @@ form label {
     }
 }
 
+.fh5co-section.less-vertical-padding {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
 .fh5co-section-gray {
     background: rgba(0, 0, 0, 0.04);
 }
@@ -1856,7 +1865,11 @@ form label {
     color: rgba(0, 0, 0, 1);
 }
 #fh5co-offcanvas a:hover {
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.8); */
+    color: var(--accent_color);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(28, 28, 28, 0.09);
 }
 #fh5co-offcanvas ul {
     padding: 0;
@@ -1872,7 +1885,7 @@ form label {
     display: none;
 }
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a {
-    display: block;
+    /* display: block; */
     position: relative;
 }
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
@@ -2016,6 +2029,12 @@ form label {
     margin-bottom: 8px;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 780px) {
+    .sticky-footer-text.display-none-sm {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -2397,8 +2416,14 @@ form label {
     width: 100%;
 }
 
-.container-wide {
-    width: 80%;
+@media (min-width: 768px) {
+    .container-wide {
+        width: 80%;
+    }
+
+    .container-narrow {
+        width: 750px;
+    }
 }
 
 .fh5co-cover .overlay-light {
@@ -2471,6 +2496,10 @@ form label {
 }
 
 .row.no-margin {
+    margin-left: 0;
+    margin-right: 0px;
+}
+.no-margin {
     margin-left: 0;
     margin-right: 0px;
 }
