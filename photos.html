@@ -90,7 +90,7 @@
                         </div>
                         <div class="col-xs-10 text-right menu-1">
                             <ul id="nav-menu" class="nav-menu">
-                                <li><a href="index.html">Home</a></li>
+                                <li class="hidden-on-mobile"><a href="index.html">Home</a></li>
                                 <li><a href="about.html">Hello</a></li>
                                 <li>
                                     <a href="photos.html">Photos</a>
@@ -302,80 +302,24 @@
                 </div>
             </div>
 
-            <!-- ****************************************** Insta callout ****************************************** -->
-
+            <!-- Insta Callout -->
             <div id="fh5co-started" class="fh5co-bg" style="background-image: url(img/Couple_ErinMike_Banner_001.jpg)">
                 <div class="overlay"></div>
-                <div class="container">
-                    <div class="row animate-box">
-                        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading insta-callout">
-                            <h2>Check Out My Instagram</h2>
-                            <hr class="mdash-hr" />
-                            <h4><a href="https://www.instagram.com/forrestherman/" target="_blank">@forrestherman</a></h4>
-                        </div>
-                    </div>
+                <div class="animate-box">
+                    <div include-html="callout_insta.html"></div>
                 </div>
             </div>
 
-            <!-- ****************************************** Footer ****************************************** -->
-
-            <!-- Page Footer -->
-            <footer id="fh5co-footer" role="contentinfo">
-                <div class="container">
-                    <div class="footer-logo img-container display-flex-row justify-center">
-                        <a href="index.html">
-                            <img id="footer-logo" src="img/forrest-herman-black.png" alt="logo" />
-                        </a>
-                    </div>
-                    <div class="row copyright">
-                        <div class="col-md-12 text-center">
-                            <p>
-                                Copyright &copy;
-                                <script>
-                                    document.write(new Date().getFullYear())
-                                </script>
-                                Forrest Herman
-                                <!-- <a href="https://github.com/forrest-herman" target="_blank">Forrest Herman</a> -->
-                                <br />
-                                <a href="mailto:forrestherman.ca@gmail.com?subject=Forrest Herman — Wedding Inquiry"> forrestherman.ca@gmail.com </a>
-                                <br />
-                                <a href="tel:7052032534"> (705) 203-2534</a>
-                            </p>
-                            <div>
-                                <ul class="fh5co-social-icons">
-                                    <li>
-                                        <a href="https://www.instagram.com/forrestherman/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/forrestherman.ca" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.pinterest.ca/forresthermanphotography/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.youtube.com/channel/UCtqtGIeIzLx5YykDAU3_CrQ" target="_blank"><i class="fab fa-youtube"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!--end of Page Footer -->
+            <!-- Footer -->
+            <div include-html="footer.html"></div>
         </div>
+
+        <div include-html="typeformSidebar.html"></div>
+        <div include-html="alertBar.html"></div>
 
         <div class="gototop js-top">
             <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
         </div>
-
-        <!--Footer notif bar-->
-        <div id="footer-placeholder"></div>
-        <!--end of Footer notif bar-->
-        <script>
-            $(function () {
-                $("#footer-placeholder").load("footerStickyNotif.html")
-            })
-        </script>
 
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
@@ -398,5 +342,9 @@
 
         <!-- Main -->
         <script src="js/main.js"></script>
+        <!-- Bring in Html elements -->
+        <script>
+            includeHTML()
+        </script>
     </body>
 </html>
