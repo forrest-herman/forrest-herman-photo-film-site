@@ -30,7 +30,8 @@
 }
 
 body {
-    font-family: "Montserrat Medium", serif;
+    /* font-family: "Montserrat Medium", sans-serif; */
+    font-family: "Cardo", serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -595,7 +596,8 @@ figure {
 }
 @media screen and (max-width: 768px) {
     .fh5co-cover {
-        height: 60vw;
+        height: 66vw;
+        min-height: 275px;
     }
     .fh5co-video {
         border-radius: 0;
@@ -1118,6 +1120,7 @@ figure {
 
 form label {
     font-weight: normal !important;
+    color: black;
 }
 
 #fh5co-header .display-tc,
@@ -1793,11 +1796,15 @@ form label {
 }
 #fh5co-started .form-inline .form-group {
     width: 100% !important;
-    margin-bottom: 10px;
 }
 #fh5co-started .form-inline .form-group .form-control {
     width: 100%;
 }
+
+.form-group {
+    margin-bottom: 30px;
+}
+
 #fh5co-started .fh5co-heading {
     margin-bottom: 30px;
 }
@@ -2367,9 +2374,10 @@ form label {
     box-shadow: none;
     background: transparent;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    height: 54px;
-    font-size: 18px;
+    /* height: 54px; */
+    font-size: 14px;
     font-weight: 300;
+    padding: 6px 10px;
 }
 .form-control:active,
 .form-control:focus {
@@ -2435,6 +2443,12 @@ form label {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+    .hidden-on-mobile {
+        visibility: hidden;
+    }
 }
 
 .display-none {
@@ -2509,7 +2523,8 @@ form label {
     margin-bottom: 10px;
 }
 
-.btn-border-black a {
+.btn-border-black a,
+.btn-form {
     font-family: Cardo, serif;
     font-size: 18px;
     min-width: 200px;
@@ -2521,7 +2536,8 @@ form label {
     transition: 0.1s;
 }
 
-.btn-border-black a:hover {
+.btn-border-black a:hover,
+.btn-form {
     background-color: var(--accent_color);
     color: white;
     -webkit-transition: 0.3s;
