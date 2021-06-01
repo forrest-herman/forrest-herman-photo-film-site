@@ -392,6 +392,9 @@ figure {
 #nav.nav-black ul li a {
     color: rgba(0, 0, 0, 0.5);
 }
+#nav.nav-black ul li a:hover {
+    color: rgba(0, 0, 0, 1);
+}
 #nav.nav-white ul li a {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -586,6 +589,9 @@ figure {
 
 .fh5co-cover.cover-about {
     background-position: center 71% !important;
+}
+.fh5co-cover.cover-contact {
+    background-position: center 34% !important;
 }
 
 @media screen and (max-width: 1500px) {
@@ -2449,7 +2455,7 @@ form label {
 
 @media (max-width: 991px) {
     .hidden-on-mobile {
-        visibility: hidden;
+        visibility: hidden !important;
     }
 }
 

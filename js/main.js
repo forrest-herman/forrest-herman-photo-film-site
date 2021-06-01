@@ -26,6 +26,7 @@
         )
 
         $("#fh5co-offcanvas .has-dropdown").addClass("offcanvas-has-dropdown")
+        $("#fh5co-offcanvas").find("li").removeClass("hidden-on-mobile")
         $("#fh5co-offcanvas").find("li").removeClass("has-dropdown")
 
         // Hover dropdown menu on mobile
