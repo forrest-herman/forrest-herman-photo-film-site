@@ -146,20 +146,21 @@
                 </div>
                 <hr class="container" />
                 <div id="wedding-elopement" class="container container-narrow">
-                    <div class="row fh5co-section less-vertical-padding">
-                        <div class="text-center fh5co-heading fh5co-heading-sm animate-box">
+                    <div class="row flex-row-md fh5co-section less-vertical-padding">
+                        <div class="col-md-5 order-md-2 img-container animate-box">
+                            <img src="/img/Event_Mel_Wedding_001.jpg" alt="" />
+                        </div>
+                        <div class="col-md-7 order-md-1 text-center fh5co-heading fh5co-heading-sm animate-box">
                             <h2 style="text-transform: uppercase">Weddings + Elopements</h2>
-                            <p>Elopement packages begin at $500 and Wedding Packages begin at $1000</p>
+                            <p>Wedding and Elopement packages begin at $500</p>
+                            <!-- <p>Elopement packages begin at $500 and Wedding Packages begin at $1000</p> -->
                             <p style="color: black; font-style: normal">
-                                I offer a variety of wedding packages varying from adventurous elopements, to small intimate weddings, to larger multi-day events. For a full breakdown of my packages,
-                                or to chat more about a custom quote, please inquire below.
+                                I offer a variety of wedding packages varying from adventurous elopements, to larger events. Whether you're throwing a small intimate backyard weddings or taking over
+                                the town, I have great options for you. For a full breakdown of my packages, or to chat more about a custom quote, please inquire below.
                             </p>
                             <div class="btn-container btn-border-black display-flex-row justify-center">
                                 <a class="btn" href="/contact.html">Inquire Here</a>
                             </div>
-                        </div>
-                        <div class="img-container animate-box">
-                            <img src="/img/Event_Mel_Wedding_001.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -168,7 +169,7 @@
                     <div class="row fh5co-section less-vertical-padding">
                         <div class="text-center fh5co-heading fh5co-heading-sm animate-box">
                             <h2 style="text-transform: uppercase">Engagements + Proposals</h2>
-                            <p>Engagements, proposals, and couple sessions begin at $300</p>
+                            <p>Engagements, proposals, and couple sessions begin at $200</p>
                             <p style="color: black; font-style: normal">
                                 Whether you're planning a love story for today or the future, this session is for you. Capture stunning visuals you and your partner will cherish forever.
                             </p>
@@ -249,12 +250,84 @@
             <div include-html="footer.html"></div>
         </div>
 
-        <div include-html="typeformSidebar.html"></div>
         <div include-html="alertBar.html"></div>
 
         <div class="gototop js-top">
             <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
         </div>
+
+        <!-- Typeform Sidebar -->
+        <div class="hidden-on-hero hidden hidden-on-mobile" style="position: fixed; top: calc(50% - 250px); right: 0; transition: width 300ms ease-out; width: 0" data-qa="side_panel">
+            <a
+                class="typeform-share button"
+                href="https://form.typeform.com/to/AoN00cGe?typeform-medium=embed-snippet"
+                data-mode="side_panel"
+                style="
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 300px;
+                    width: 200px;
+                    height: 48px;
+                    padding: 0 20px;
+                    margin: 0;
+                    cursor: pointer;
+                    background: #ad977b;
+                    border-radius: 4px 4px 0px 0px;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06), 0px 2px 4px rgba(0, 0, 0, 0.08);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    transform: rotate(-90deg);
+                    transform-origin: bottom left;
+                    color: white;
+                    text-decoration: none;
+                    z-index: 9999;
+                "
+                data-width="320"
+                data-height="500"
+                target="_blank"
+            >
+                <span class="icon" style="width: 32px; position: relative; text-align: center; transform: rotate(90deg) scale(0.85); left: -8px; font-size: 25px">
+                    <i class="far fa-comment-dots"></i>
+                </span>
+                <span
+                    style="
+                        text-decoration: none;
+                        font-size: 20px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        width: 100%;
+                        text-align: center;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    "
+                >
+                    Get in touch!
+                </span>
+            </a>
+        </div>
+        <script>
+            ;(function () {
+                var qs,
+                    js,
+                    q,
+                    s,
+                    d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = "typef_orm_share",
+                    b = "https://embed.typeform.com/"
+                if (!gi.call(d, id)) {
+                    js = ce.call(d, "script")
+                    js.id = id
+                    js.src = b + "embed.js"
+                    q = gt.call(d, "script")[0]
+                    q.parentNode.insertBefore(js, q)
+                }
+            })()
+        </script>
 
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
