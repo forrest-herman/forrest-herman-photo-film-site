@@ -1100,7 +1100,7 @@ figure {
 }
 .fh5co-contact-info ul li {
     padding: 0 0 0 50px;
-    margin: 0 0 30px 0;
+    margin: 0 0 5px 0;
     list-style: none;
     position: relative;
 }
@@ -1557,6 +1557,11 @@ form label {
 .fh5co-heading.fh5co-heading-sm {
     margin-bottom: 2em;
 }
+
+.fh5co-heading.fh5co-heading-none {
+    margin-bottom: 0;
+}
+
 .fh5co-heading h2 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -1649,7 +1654,7 @@ form label {
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
     font-style: italic;
-    color: #8f989f;
+    /* color: #8f989f; */
     font-size: 20px;
     line-height: 1.6em;
 }
@@ -2442,6 +2447,13 @@ form label {
     }
 }
 
+@media (min-width: 768px) {
+    .container-max-width-970 {
+        max-width: 1025px;
+        width: auto;
+    }
+}
+
 .fh5co-cover .overlay-light {
     background: rgba(0, 0, 0, 0.2);
 }
@@ -2530,6 +2542,10 @@ form label {
     .mobile-justify-center {
         justify-content: center;
     }
+}
+
+.margin-right-10 {
+    margin-right: 10px;
 }
 
 .row.no-margin {
@@ -2758,4 +2774,18 @@ form label {
     .order-md-23 {
         order: 23;
     }
+}
+
+/* Special Fonts */
+
+@font-face {
+    font-family: "monthgladeregular";
+    src: url("/fonts/monthglade-webfont.woff2") format("woff2"), url("/fonts/monthglade-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2.font-script {
+    font-family: monthgladeregular;
+    font-size: 85px;
 }
