@@ -162,29 +162,29 @@
                                     </div>
                                     <div class="col-md-6 inner-form-group">
                                         <label for="fname">First Name *</label>
-                                        <input type="text" id="fname" class="form-control" placeholder="Your First Name" required="" />
+                                        <input type="text" id="fname" name="fname" class="form-control" placeholder="Your First Name" required="" />
                                     </div>
                                     <div class="col-md-6 inner-form-group">
                                         <label for="lname">Last Name *</label>
-                                        <input type="text" id="lname" class="form-control" placeholder="Your Last Name" required="" />
+                                        <input type="text" id="lname" name="lname" class="form-control" placeholder="Your Last Name" required="" />
                                     </div>
                                 </div>
 
                                 <div class="row form-group">
                                     <div class="col-md-6 inner-form-group">
                                         <label for="fname">Your Partner's First Name</label>
-                                        <input type="text" id="fname2" class="form-control" placeholder="Your Partner's First Name" />
+                                        <input type="text" id="fname2" name="fname2" class="form-control" placeholder="Your Partner's First Name" />
                                     </div>
                                     <div class="col-md-6 inner-form-group">
                                         <label for="lname">Your Partner's Last Name</label>
-                                        <input type="text" id="lname2" class="form-control" placeholder="Your Partner's Last Name" />
+                                        <input type="text" id="lname2" name="lname2" class="form-control" placeholder="Your Partner's Last Name" />
                                     </div>
                                 </div>
 
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="email">Email Address *</label>
-                                        <input type="email" id="email" class="form-control" placeholder="Your email address" required="" />
+                                        <input type="email" id="email" name="_replyto" class="form-control" placeholder="Your email address" required="" />
                                     </div>
                                 </div>
 
@@ -198,14 +198,14 @@
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="subject">Instagram — Let's follow each other!</label>
-                                        <input type="text" id="subject" class="form-control" placeholder="@your-instagram-handle" />
+                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="@your-instagram-handle" />
                                     </div>
                                 </div>
 
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="message">Session Type *</label>
-                                        <select name="found_me" id="found_me" class="form-control" required="">
+                                        <select name="session_type" id="session_type" class="form-control" required="">
                                             <option value="Select" selected="" disabled="">Select</option>
                                             <option value="Wedding or Elopement Photography">Wedding / Elopement - Photography</option>
                                             <option value="Wedding or Elopement Film">Wedding / Elopement - Film</option>
@@ -222,7 +222,7 @@
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="subject">3 words to describe the vibe</label>
-                                        <input type="text" id="vibe" class="form-control" placeholder="adventure, cozy, romantic, fairytale, rain, polaroid, etc." />
+                                        <input type="text" id="vibe" name="vibe" class="form-control" placeholder="adventure, cozy, romantic, fairytale, rain, polaroid, etc." />
                                     </div>
                                 </div>
 
@@ -250,7 +250,15 @@
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="message">Add any extra details here — How can I help you?</label>
-                                        <textarea type="message" id="message" cols="30" rows="4" class="form-control" placeholder="The more details the better. How can I serve you?"></textarea>
+                                        <textarea
+                                            type="message"
+                                            id="message"
+                                            name="message"
+                                            cols="30"
+                                            rows="4"
+                                            class="form-control"
+                                            placeholder="The more details the better. How can I serve you?"
+                                        ></textarea>
                                     </div>
                                 </div>
 
