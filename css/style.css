@@ -1817,6 +1817,12 @@ form label {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 991px) {
+    .inner-form-group:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
 #fh5co-started .fh5co-heading {
     margin-bottom: 30px;
 }
@@ -2465,9 +2471,18 @@ form label {
     transition: 0.5s;
 }
 
+@media (min-width: 992px) {
+    .d-md-none {
+        display: none;
+    }
+}
+
 @media (max-width: 991px) {
     .hidden-on-mobile {
         visibility: hidden !important;
+    }
+    .d-sm-none {
+        display: none;
     }
 }
 
