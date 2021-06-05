@@ -216,6 +216,20 @@
 
                                 <div class="row form-group">
                                     <div class="col-md-12">
+                                        <label for="subject">Do you have a date in mind?</label>
+                                        <input type="text" id="date" name="date" class="form-control" placeholder="Enter a date (DD/MM/YYYY) or a range of dates that work for you" />
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="subject">Do you have a location in mind? If not it's okay to leave blank!</label>
+                                        <input type="text" id="location" name="location" class="form-control" placeholder="Enter location here" />
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
                                         <label for="message">Session Type *</label>
                                         <select name="session_type" id="session_type" class="form-control" required="">
                                             <option value="Select" selected="" disabled="">Select</option>
@@ -249,6 +263,13 @@
                                             <option value="Refferal">Referral</option>
                                             <option value="other">Other</option>
                                         </select>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="subject">If selected 'Referral' or 'Other' above, please specify who or what. Thanks!</label>
+                                        <input type="text" id="referral" name="referral" class="form-control" placeholder="Name of person who referred you to me or other source." />
                                     </div>
                                 </div>
 
