@@ -1126,15 +1126,26 @@ figure {
 }
 .fh5co-contact-info ul li.phone:before {
     font-size: 23px;
-    content: "\e9f4";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f095";
+    /* content: "\e9f4"; */
 }
 .fh5co-contact-info ul li.email:before {
     font-size: 23px;
-    content: "\e9da";
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+    /* content: "\e9da"; */
 }
 .fh5co-contact-info ul li.url:before {
     font-size: 23px;
     content: "\e9af";
+}
+.fh5co-contact-info ul li.insta:before {
+    font-size: 23px;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: normal;
+    content: "\f16d";
 }
 
 form label {
