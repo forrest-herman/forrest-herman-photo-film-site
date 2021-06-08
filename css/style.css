@@ -2828,7 +2828,22 @@ h2.font-script {
     font-size: 85px;
 }
 
+#fh5co-header .display-tc h2.portfolio,
 h2.portfolio {
     font-family: quentinregular;
     font-size: 65px;
+}
+
+@media screen and (min-width: 768px) {
+    #fh5co-header .display-tc h2.portfolio {
+        font-size: 8vw;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #fh5co-header .display-tc h2.portfolio {
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
 }
