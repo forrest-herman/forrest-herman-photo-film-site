@@ -2847,3 +2847,8 @@ h2.portfolio {
         margin-bottom: 10px;
     }
 }
+
+.image-flipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
