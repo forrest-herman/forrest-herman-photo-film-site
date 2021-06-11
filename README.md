@@ -2,3 +2,5 @@
 
 Website:
 Forrest Herman - Photographer + Filmmaker
+
+![Site Demo](img/demo.png)
