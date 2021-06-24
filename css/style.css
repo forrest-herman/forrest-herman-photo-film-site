@@ -2882,3 +2882,7 @@ h2.portfolio {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
+.carousel-inner .item {
+    /* transition-duration: 1s; */
+}
