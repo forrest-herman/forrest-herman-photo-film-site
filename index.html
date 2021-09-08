@@ -177,9 +177,7 @@
                     </div>
                 </div>
                 <a class="carousel-control left" href="#heroslider" role="button" data-slide="prev">
-                    <!-- <span class="carousel-control icon-prev" aria-hidden="true"></span> -->
-
-                    <svg class="hero-slider-carousel-arrows left" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
+                    <!-- <svg class="hero-slider-carousel-arrows left" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
                         <g
                             fill="none"
                             fill-rule="nonzero"
@@ -203,12 +201,19 @@
                                 ></path>
                             </g>
                         </g>
+                    </svg> -->
+                    <svg class="hero-slider-carousel-arrows left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100">
+                        <defs>
+                            <marker id="arrowhead-left" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                                <polygon points="0 0, 4 3.5, 0 7" fill="#fff" />
+                            </marker>
+                        </defs>
+                        <line x1="339" y1="50" x2="89" y2="50" stroke="#fff" stroke-width="8" marker-end="url(#arrowhead-left)" />
                     </svg>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control right" href="#heroslider" role="button" data-slide="next">
-                    <!-- <span class="carousel-control icon-next" aria-hidden="true"></span> -->
-                    <svg class="hero-slider-carousel-arrows right" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172" style="fill: #000000">
                         <g
                             fill="none"
                             fill-rule="nonzero"
@@ -232,6 +237,14 @@
                                 ></path>
                             </g>
                         </g>
+                    </svg> -->
+                    <svg class="hero-slider-carousel-arrows right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100">
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                                <polygon points="0 0, 4 3.5, 0 7" fill="#fff" />
+                            </marker>
+                        </defs>
+                        <line x1="0" y1="50" x2="250" y2="50" stroke="#fff" stroke-width="8" marker-end="url(#arrowhead)" />
                     </svg>
                     <span class="sr-only">Next</span>
                 </a>

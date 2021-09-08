@@ -2926,6 +2926,10 @@ h2.portfolio {
     left: inherit;
     right: inherit;
     bottom: 0;
+    width: max(2vw, 89px);
+    height: max(2vw, 44px);
+    /* width: max(2vw, 40px);
+    height: max(2vw, 40px); */
 }
 
 .hero-slider-carousel-arrows.left {
