@@ -2933,17 +2933,17 @@ h2.portfolio {
 }
 
 .hero-slider-carousel-arrows.left {
-    right: min(10%, 75px);
+    right: min(35%, 75px);
 }
 .hero-slider-carousel-arrows.right {
-    left: min(10%, 75px);
+    left: min(35%, 75px);
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .hero-slider-carousel-arrows.left {
         right: 80%;
     }
     .hero-slider-carousel-arrows.right {
         left: 80%;
     }
-}
+} */
