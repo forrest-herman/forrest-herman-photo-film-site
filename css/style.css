@@ -2638,6 +2638,15 @@ form label {
     padding-right: 7px;
 }
 
+.wrapper-col {
+    position: relative;
+    min-height: 1px;
+    column-gap: 14px;
+    column-count: 1;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
 @media (max-width: 991px) {
     .wrapper-2-grid {
         grid-template-columns: 1fr;
