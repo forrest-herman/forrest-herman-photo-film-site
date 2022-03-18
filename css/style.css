@@ -510,6 +510,16 @@ figure {
     position: relative;
 }
 
+.fh5co-bg.banner {
+    background-position: 50% 58%;
+}
+
+@media screen and (min-width: 1000px) {
+    .fh5co-bg.banner {
+        background-position: 50% 45%;
+    }
+}
+
 .fh5co-bg {
     background-position: center center;
     width: 100%;
