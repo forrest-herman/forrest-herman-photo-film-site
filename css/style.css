@@ -494,7 +494,7 @@ figure {
     -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
-#nav.nav-white ul li.active > a {
+#nav.nav-white ul:not(.dropdown) > li.active > a {
     color: #fff !important;
 }
 #nav.nav-black ul li.active > a {
