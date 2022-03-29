@@ -1367,7 +1367,7 @@ form label {
     #welcome,
     #fh5co-gallery,
     .fh5co-section {
-        padding: 3em 0;
+        padding: 1em 0;
     }
 
     .fh5co-section.about {
@@ -1571,6 +1571,12 @@ form label {
 
 .fh5co-heading {
     margin-bottom: 5em;
+}
+
+@media screen and (max-width: 992px) {
+    .fh5co-heading {
+        margin-bottom: 1em;
+    }
 }
 
 #insta-callout .fh5co-heading.insta-callout,
