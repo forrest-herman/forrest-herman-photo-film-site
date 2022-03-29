@@ -2598,9 +2598,18 @@ form label {
     margin-right: 0px;
 }
 
+.margin-top-10 {
+    margin-top: 10px;
+}
+
 .btn-container {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.margin-right-left-10 {
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .btn-border-black a,
