@@ -1371,12 +1371,12 @@ form label {
         padding: 1em 0;
     }
 
-    .fh5co-section.about {
+    .fh5co-section.below-image {
         padding: 3em 3em;
     }
 }
 @media screen and (max-width: 500px) {
-    .fh5co-section.about {
+    .fh5co-section.below-image {
         padding: 3em 1em;
     }
 }
