@@ -2894,13 +2894,13 @@ form label {
 
 h2.font-script {
     font-family: monthgladeregular;
-    font-size: 85px;
+    font-size: min(85px,15vw);
 }
 
 #fh5co-header .display-tc h2.portfolio,
 h2.portfolio {
     font-family: quentinregular;
-    font-size: 65px;
+    font-size: min(65px,18vw);
 }
 
 @media screen and (min-width: 768px) {
