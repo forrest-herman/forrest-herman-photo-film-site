@@ -1366,7 +1366,10 @@ form label {
     #fh5co-event,
     #welcome-story,
     #welcome,
-    #fh5co-gallery,
+    #fh5co-gallery {
+        padding: 2em 0;
+    }
+    
     .fh5co-section {
         padding: 1em 0;
     }
