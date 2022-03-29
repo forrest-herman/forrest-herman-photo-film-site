@@ -119,11 +119,12 @@ body {
 }
 
 .video-text-container h4 {
+    font-size: min(18px,3vw);
     color: white;
 }
 
 .video-text-container h3 {
-    font-size: 3.5rem;
+    font-size: min(3.5rem,4vw);
     color: white;
 }
 
@@ -543,7 +544,7 @@ figure {
 .fh5co-video a {
     z-index: 1001;
     /* position: absolute; */
-    --circle_size: 55px;
+    --circle_size: min(55px,7vw);
     /* top: 50%; */
     /* top: 65%; */
     /* left: 50%; */
@@ -566,7 +567,7 @@ figure {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    font-size: 30px;
+    font-size: min(30px,5vw);
 }
 .fh5co-video .overlay {
     position: absolute;
