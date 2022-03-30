@@ -2046,9 +2046,18 @@ form label {
     background-color: var(--accent_color);
     color: white;
     text-align: center;
+    opacity: 1;
+    transition-property: opacity;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+}
+.sticky-footer.hidden-visibility {
+    opacity: 0;
+    transition-property: opacity;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
 }
 #sticky-footer-bar .social-icons {
     margin-bottom: 0;

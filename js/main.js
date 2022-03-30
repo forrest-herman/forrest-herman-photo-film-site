@@ -148,11 +148,11 @@
             var $win = $(window)
             if ($win.scrollTop() > 200) {
                 $(".js-top").addClass("active")
-                $(".sticky-footer").removeClass("hidden")
+                $(".sticky-footer").removeClass("hidden-visibility")
                 $(".hidden-on-hero").removeClass("hidden")
             } else {
                 $(".js-top").removeClass("active")
-                $(".sticky-footer").addClass("hidden")
+                $(".sticky-footer").addClass("hidden-visibility")
                 $(".hidden-on-hero").addClass("hidden")
             }
         })
