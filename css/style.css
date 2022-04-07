@@ -39,6 +39,10 @@ body {
     background: #fdfbf7;
 }
 
+.accent-color {
+    color: var(--accent_color);
+}
+
 .display-block a {
     display: block;
 }
@@ -80,7 +84,7 @@ body {
 }
 
 .nav-spacer {
-    margin-top: min(120px,20vw);
+    margin-top: min(120px, 20vw);
 }
 
 .nav-hero-spacer {
@@ -104,7 +108,7 @@ body {
     align-content: center;
     justify-content: center;
     align-items: center;
-    -webkit-user-select: none; /* Safari */        
+    -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
@@ -123,12 +127,12 @@ body {
 }
 
 .video-text-container h4 {
-    font-size: min(18px,3vw);
+    font-size: min(18px, 3vw);
     color: white;
 }
 
 .video-text-container h3 {
-    font-size: min(3.5rem,4vw);
+    font-size: min(3.5rem, 4vw);
     color: white;
 }
 
@@ -548,7 +552,7 @@ figure {
 .fh5co-video a {
     z-index: 1001;
     /* position: absolute; */
-    --circle_size: min(55px,7vw);
+    --circle_size: min(55px, 7vw);
     /* top: 50%; */
     /* top: 65%; */
     /* left: 50%; */
@@ -571,7 +575,7 @@ figure {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    font-size: min(30px,5vw);
+    font-size: min(30px, 5vw);
 }
 .fh5co-video .overlay {
     position: absolute;
@@ -1373,7 +1377,7 @@ form label {
     #fh5co-gallery {
         padding: 2em 0;
     }
-    
+
     .fh5co-section {
         padding: 1em 0;
     }
@@ -2910,13 +2914,13 @@ form label {
 
 h2.font-script {
     font-family: monthgladeregular;
-    font-size: min(85px,15vw);
+    font-size: min(85px, 15vw);
 }
 
 #fh5co-header .display-tc h2.portfolio,
 h2.portfolio {
     font-family: quentinregular;
-    font-size: min(65px,18vw);
+    font-size: min(65px, 18vw);
 }
 
 @media screen and (min-width: 768px) {
