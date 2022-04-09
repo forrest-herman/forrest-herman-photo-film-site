@@ -679,6 +679,12 @@ figure {
         height: 400px;
     }
 }
+@media screen and (max-width: 500px) {
+    .fh5co-cover.fh5co-cover-sm {
+        height: 250px;
+        min-height: 250px;
+    }
+}
 .fh5co-cover.fh5co-cover-sm .display-t,
 .fh5co-cover.fh5co-cover-sm .display-tc {
     height: 600px;
@@ -689,6 +695,12 @@ figure {
     .fh5co-cover.fh5co-cover-sm .display-t,
     .fh5co-cover.fh5co-cover-sm .display-tc {
         height: 400px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .fh5co-cover.fh5co-cover-sm .display-t,
+    .fh5co-cover.fh5co-cover-sm .display-tc {
+        height: 250px;
     }
 }
 
@@ -2992,6 +3004,7 @@ h2.portfolio {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 .carousel-control {
+    z-index: 700;
     position: absolute;
     top: 90%;
     left: inherit;
