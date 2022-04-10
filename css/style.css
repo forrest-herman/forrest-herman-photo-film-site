@@ -2492,7 +2492,8 @@ form label {
     background-repeat: no-repeat, no-repeat;
 }
 
-.js .animate-box {
+.js .animate-box,
+.js .animate-gallery {
     opacity: 0;
 }
 
