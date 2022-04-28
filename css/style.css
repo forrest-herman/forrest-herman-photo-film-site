@@ -75,6 +75,16 @@ body {
     transition: 0.5s;
 }
 
+#pricing-page {
+    position: absolute;
+    overflow-x: hidden;
+    width: 100%;
+    height: max(100vh,500px);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
 .overlay-prep {
     position: absolute;
     top: 0;
@@ -1651,6 +1661,14 @@ form label {
     color: rgba(0, 0, 0, 0.4);
 }
 
+span.fh-styled {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+}
+
 #testimonials .wrap-testimony {
     position: relative;
 }
@@ -2641,6 +2659,9 @@ form label {
     margin-left: 0;
     margin-right: 0px;
 }
+.margin-auto {
+    margin: auto;
+}
 
 .margin-top-10 {
     margin-top: 10px;
@@ -3064,3 +3085,83 @@ h2.portfolio,
         left: 80%;
     }
 } */
+
+
+.pricing-page {
+    width: calc(max(100vh,800px)/1.2);
+    height: max(100vh,800px);
+    padding-top: 15px;
+}
+
+.pricing-gallery {
+    position: relative;
+    z-index: 5;
+}
+
+.pricing-offset {
+    z-index: 10;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.pricing-offset .pricing-offset-text {
+    margin-top: -80px;
+}
+
+.pricing-offset-text span.fh-styled {
+    color:rgb(0, 0, 0);
+    padding: 1px 5px;
+    font-size: 2.5rem;
+}
+
+.highlight-text {
+    background-color: var(--accent_color);
+}
+
+.pricing-offset-text h2 {
+    margin: 15px 0;
+    font-size: 70px;
+}
+
+.pricing-packages h3,
+.pricing-packages h4 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    /* font-family: "Montserrat Medium", sans-serif; */
+}
+
+.pricing-packages h3{
+    font-size: 2.5rem;
+}
+
+.pricing-packages .package.col-sm-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pricing-page hr{
+    margin: 3px auto;
+    border: 0;
+    border-top: 0.5px solid #000;
+    width: 30%;
+}
+.pricing-page .pricing-packages hr{
+    width: 45px;
+}
+
+.pricing-page p{
+    margin: 20px 0;
+    font-size: 1.2rem;
+    line-height: 2.5;
+}
+
+.pricing-page .packages-subtitle{
+    font-style: italic;
+    color: var(--accent_color);
+    font-size: 1.2rem;
+}
+
+.pricing-page .pricing-page-footer h4 {
+    font-family: quentinregular;
+
+}
