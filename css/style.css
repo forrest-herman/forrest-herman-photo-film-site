@@ -2503,7 +2503,7 @@ span.fh-styled {
     height: 100%;
     z-index: 9999;
     background-color: #fff;
-    background-image: url(../img/loader.gif), url(../img/fh-black.png);
+    background-image: url(../assets/loader.gif), url(../assets/favicon-black.png);
     /* background-image: ; */
     background-position: center, center;
     background-size: 80px, 30px;
