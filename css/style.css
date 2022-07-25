@@ -316,7 +316,7 @@ figure {
     --logo_width: 150px;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px -7px 17px 0px black;
-    /* background-image: url("/img/Couple_Engage_ErinMike_b&w_002.jpg"); */
+    /* background-image: url("/img/portfolio/wedding_L_001&w_002.jpg"); */
     background-size: cover;
     background-position-y: 350px;
     /* opacity: 0.7; */
@@ -2503,7 +2503,7 @@ span.fh-styled {
     height: 100%;
     z-index: 9999;
     background-color: #fff;
-    background-image: url(../img/loader.gif), url(../img/fh-black.png);
+    background-image: url(../assets/loader.gif), url(../assets/favicon-black.png);
     /* background-image: ; */
     background-position: center, center;
     background-size: 80px, 30px;
