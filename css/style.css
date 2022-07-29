@@ -621,15 +621,22 @@ figure {
 }
 
 .fh5co-cover.cover-about {
-    background-position: center 71% !important;
+    background-position: center 78% !important;
 }
 .fh5co-cover.cover-contact {
     background-position: center 34% !important;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1400px) {
     .fh5co-cover.cover-about {
-        background-position: center 92% !important;
+        background-position: center 100% !important;
+        /* background-position: center 92% !important; */
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .fh5co-cover.cover-about {
+        background-position: center 63% !important;
     }
 }
 
@@ -2526,6 +2533,10 @@ span.fh-styled {
     padding-bottom: 7px; */
 }
 
+.row:not(:last-child) > .img-container.stack {
+    padding-bottom: 30px;
+}
+
 .portfolio-img-container img,
 .img-container img {
     width: 100%;
@@ -2560,7 +2571,7 @@ span.fh-styled {
 }
 
 @media (min-width: 992px) {
-    .d-md-none {
+    .show-only-on-mobile {
         display: none;
     }
 }
@@ -2570,6 +2581,12 @@ span.fh-styled {
         visibility: hidden !important;
     }
     .d-sm-none {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .d-md-none {
         display: none;
     }
 }
