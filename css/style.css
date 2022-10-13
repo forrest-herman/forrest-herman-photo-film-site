@@ -1426,6 +1426,14 @@ form label {
     padding-top: 2em;
 }
 
+.fh5co-section.less-top-padding {
+    padding-top: 2em;
+}
+
+.fh5co-section.no-bottom-padding {
+    padding-bottom: 0;
+}
+
 .fh5co-heading {
     margin-bottom: 5em;
 }
@@ -1689,6 +1697,13 @@ span.fh-styled {
     font-weight: 700;
     display: block;
 }
+.quote span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+}
 #testimonials .wrap-testimony .testimony-slide span a.twitter {
     color: var(--accent_color);
     font-weight: 300;
@@ -1733,6 +1748,12 @@ span.fh-styled {
     }
 }
 #testimonials .wrap-testimony .testimony-slide blockquote p {
+    font-style: italic;
+    /* color: #8f989f; */
+    font-size: 20px;
+    line-height: 1.6em;
+}
+.quote blockquote p {
     font-style: italic;
     /* color: #8f989f; */
     font-size: 20px;
@@ -2652,7 +2673,7 @@ span.fh-styled {
         order: 3;
     }
 
-    .img-container .about-img {
+    .img-container:not(:first-child) .about-img {
         padding: 15px 0 0 0;
     }
 
